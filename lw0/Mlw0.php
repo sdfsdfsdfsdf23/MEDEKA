@@ -15,3 +15,4 @@ function calculator(string $primer)
     echo $result;
 }
 calculator('1+2*3-4/5'); //answer 6.2
+?>
