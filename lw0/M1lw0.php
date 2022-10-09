@@ -24,4 +24,4 @@ function sumTime(string $timeFirst, string $timeSecond)
     }
     echo (int)$timeArrayThird0 . ":", (int)$timeArrayThird1 . ":", (int)$timeArrayThird2;
 }
-sumTime('40:30:90', '10:60:12');
+sumTime('41:30:90', '10:60:12');
