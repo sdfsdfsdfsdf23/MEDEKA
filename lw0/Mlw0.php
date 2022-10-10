@@ -1,17 +1,17 @@
 <?php
 
-function calculator(string $primer)
+function calculator(string $primer): float
 {
     $arrayznak = array("?", ")");
 
     foreach ($arrayznak as $znak) {
         $pos = strpos($primer, $znak);
         if ($pos === false) {
-            $result = eval("return (float)$primer;");
+            $result = eval("return $primer;");
         } else {
             echo "Error";
         }
     }
-    echo $result;
+    return $result;
 }
-calculator('1+2*3-4/5'); //answer 6.2
+echo calculator('1+2*3-4/5'); //answer 6.2
