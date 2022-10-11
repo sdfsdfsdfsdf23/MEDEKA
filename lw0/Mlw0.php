@@ -12,8 +12,8 @@ function calculator(string $primer): float
         }
         if (in_array($arrFirst[$i], $arrayZnaki)) {
             unset($arrFirst[$i]);
-        } 
-       $primer =  implode($arrFirst);
+        }
+        $primer =  implode($arrFirst);
     }
     return eval("return $primer;");
 }
