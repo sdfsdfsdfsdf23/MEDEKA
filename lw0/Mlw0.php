@@ -2,16 +2,19 @@
 
 function calculator(string $primer): float
 {
-    $arrayznak = array("?", ")");
+    $arrayZnaki = ['!', '@', '#', '%', '^', '&', '?', '_'];
 
-    foreach ($arrayznak as $znak) {
-        $pos = strpos($primer, $znak);
-        if ($pos === false) {
-            $result = eval("return $primer;");
-        } else {
-            echo "Error";
+    $arrFirst = str_split($primer);
+    $length = count($arrFirst);
+    for ($i = 0; $i < $length; $i++) {
+        while (ctype_alpha($arrFirst[$i])) {
+            unset($arrFirst[$i]);
         }
+        if (in_array($arrFirst[$i], $arrayZnaki)) {
+            unset($arrFirst[$i]);
+        } 
+       $primer =  implode($arrFirst);
     }
-    return $result;
+    return eval("return $primer;");
 }
-echo calculator('1+2*3-4/5'); //answer 6.2
+echo calculator('!1+2@*3^-&4?/#asd5'); //answer 6.2
