@@ -26,7 +26,7 @@
                     </div>
                     <div class="ml-12">
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                            Крипочек Гриша.
+                            Крипочек Максим.
                         </div>
                     </div>
                 </div>
