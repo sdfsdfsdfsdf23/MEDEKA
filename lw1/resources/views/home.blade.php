@@ -13,24 +13,24 @@
 <body>
     <div class="maincontainer">
         <div class="img">
-            <img src="{{ asset('ifDFxVeptvY.jpg') }}" alt="">
+            <img src="{{ asset('img/ifDFxVeptvY.jpg') }}" alt="">
         </div>
         <div class="container">
             <div class="item">
-                <h4>Крипочек</h4>
-                Звать Андрюха
+                <h4>{{ $name }}</h4>
+                {{ $description }}
             </div>
             <div class="item">
-                <h4>Крипочек</h4>
-                Звать Андрюха
+                <h4>{{ $nameSpell }}</h4>
+                {{ $descriptionSpell }}
             </div>
             <div class="item">
-                <h4>Крипочек</h4>
-                Звать Андрюха
+                <h4>{{ $nameGame }}</h4>
+                {{ $descriptionGame }}
             </div>
             <div class="item">
-                <h4>Крипочек</h4>
-                Звать Андрюха
+                <h4>{{ $situation }}</h4>
+                {{ $descriptionSituation }}
             </div>
         </div>
     </div>

@@ -9,6 +9,5 @@
   
   .container > div {
     flex: 50%;
-
     margin-bottom: 10px;
   }
